@@ -8,7 +8,6 @@ $popins: 'Poppins', sans-serif;
 
 body {
     font-family: $popins;
-    background-color: gray;
 }
 
 header {
@@ -27,5 +26,13 @@ header {
         border-radius: 50%;
     }
 
-    p {}
+}
+
+@media screen and (max-width: 480){
+    body {
+        background-color: blue;
+    }
+    header{
+        flex-direction: column;
+    }
 }
