@@ -50,7 +50,7 @@ class Pokemon {
 let pokemonList = [
 ]
 
-pokemonList.push(new Pokemon('img', "Lumivole", "314", types = ["insecte"], "Son doux parfum attire les Muciole. Cela lui permet de guider ces derniers afin de dessiner des symboles lumineux dans le ciel nocturne."))
+pokemonList.push(new Pokemon('assets/image/Lumivole-RS.png', "Lumivole", "314", types = ["insecte"], "Son doux parfum attire les Muciole. Cela lui permet de guider ces derniers afin de dessiner des symboles lumineux dans le ciel nocturne."))
 pokemonList.push(new Pokemon('img', "Pijako", "441", types = ["normal", "vol"], "Ce Pokémon bat la mesure en balançant les plumes de sa queue de droite à gauche comme un métronome. Il imite le langage humain."))
 pokemonList.push(new Pokemon('img', "Hyporoi", "230", types = ["eau", "dragon"], "Hyporoi vit au fin fond des profondeurs océaniques généralement inhabitées. On a longtemps cru que le bâillement de ce Pokémon créait les tourbillons dans les océans."))
 pokemonList.push(new Pokemon('img', "Coconfort", "014", types = ["insecte", "poison"], "Il peut à peine bouger. Quand il est menacé, il sort parfois son aiguillon pour empoisonner ses ennemis."))
@@ -66,16 +66,27 @@ function createPokemonCard(pokemon) {
     let arr = pokemon.types
     let articule = document.createElement("article")
     let image = document.createElement("img")
+    console.log(pokemon._img);
+    image.src = pokemon._img
+
     let div = document.createElement("div")
     let name = document.createElement("h2")
+    name.innerHTML = pokemon._name
     let number = document.createElement("h3")
+    number.innerHTML = pokemon._number
     let divTab = document.createElement("div")
     for (elem of arr) {
         let types = document.createElement("span")
         divTab.appendChild(types)
+        types.innerHTML = elem
     }
     let description = document.createElement("p")
+    description.innerHTML = pokemon._description
+
     div.appendChild(name, number, divTab, description)
+    div.appendChild(number)
+    div.appendChild(divTab)
+    div.appendChild(description)
     articule.appendChild(image)
     articule.appendChild(div)
     body.children[1].appendChild(articule)
