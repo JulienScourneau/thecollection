@@ -1,0 +1,31 @@
+$popins: "Poppins", sans-serif;
+
+body {
+  padding: 2%;
+  background-color: lightgray;
+  font-family: $popins;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 5%;
+
+  div {
+    margin: 5%;
+  }
+  img {
+    border-radius: 50%;
+    width: 50%;
+  }
+  h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 5%;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+
