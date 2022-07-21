@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -46,36 +45,4 @@ table {
 input {
   -webkit-appearance: none;
   border-radius: 0;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-}
-
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-header section {
-  width: 50%;
-}
-header img {
-  margin-right: 5%;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-}
-
-@media screen and (max-width: 480) {
-  body {
-    background-color: blue;
-  }
-  header {
-    flex-direction: column;
-  }
 }/*# sourceMappingURL=style.css.map */
