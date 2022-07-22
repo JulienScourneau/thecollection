@@ -1,23 +1,33 @@
 $popins: "Poppins", sans-serif;
 
 body {
-  background-color: lightgray;
+  background-color: #f5deb3;
   font-family: $popins;
 }
 
-header {
+.header {
   display: flex;
   align-items: center;
   flex-direction: column;
   margin: 5%;
 
+  &__span {
+    display: inline-block;
+    overflow: hidden;
+    width: 40%;
+    padding-bottom: 40%;
+    height: 0;
+    position: relative;
+    &__img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
   div {
     margin: 5%;
-  }
-
-  img {
-    border-radius: 50%;
-    width: 50%;
   }
 
   h1 {
@@ -32,56 +42,80 @@ header {
 }
 
 main {
-  background-color: wheat;
   display: flex;
   flex-direction: column;
+
   align-items: center;
 
   article {
     background-color: white;
     border-radius: 5%;
-    width: 75%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5%;
-    margin: 5% 0%;
+    margin: 5% 5%;
+    margin-bottom: 10%;
 
-    img {
+    .article__header {
+      display: inline-block;
+      overflow: hidden;
       width: 50%;
-      max-width: 400px;
-      height: auto;
+      padding-bottom: 50%;
+      height: 0;
+      position: relative;
+      &__img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit: contain;
+      }
     }
 
     h3 {
+      margin-left: 5%;
+      margin-top: 5%;
       align-self: flex-start;
       order: -1;
-      padding: 2%;
-      border-radius: 25%;
+      padding: 3%;
+      border-radius: 20%;
       background-color: lightcyan;
       width: min-content;
-      font-size: 0.8em;
-      margin-bottom: 5%;
+      font-size: 0.9em;
     }
 
     .article__footer {
       &__types {
+        margin: 5%;
+        display: flex;
         font-style: italic;
         margin-bottom: 5%;
 
         &__span {
-          border-radius: 10%;
-          font-size: 1em;
+          flex: 1 1 0px;
+          text-align: center;
+          border-radius: 1%;
+          font-size: 0.8em;
+          margin: 0% 2%;
           padding: 2%;
-          padding-left: 0;
-          margin-right: 5%;
         }
+      }
+
+      h2 {
+        font-weight: bold;
+        font-size: 1.5em;
+        margin: 10% 5% 5%;
+      }
+
+      p {
+        font-size: 1em;
+        margin: 5% 5%;
       }
 
       &__logo {
         margin-top: 5%;
         display: flex;
         justify-content: center;
+        margin-bottom: 5%;
         img {
           filter: grayscale(0%);
           transition: 0.3s ease-in-out;
@@ -89,21 +123,10 @@ main {
         }
       }
 
-      &__logo:hover{
-        img{
+      &__logo:hover {
+        img {
           filter: grayscale(100);
         }
-      }
-
-      h2 {
-        font-weight: bold;
-        font-size: 1.5em;
-        margin: 10% 0% 5%;
-      }
-
-      p {
-        font-size: 1em;
-        margin: 5% 0%;
       }
     }
   }
