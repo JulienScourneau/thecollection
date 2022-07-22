@@ -1,7 +1,6 @@
 $popins: "Poppins", sans-serif;
 
 body {
-  padding: 2%;
   background-color: lightgray;
   font-family: $popins;
 }
@@ -68,21 +67,43 @@ main {
     .article__footer {
       &__types {
         font-style: italic;
-        background-color: aqua;
-        width: fit-content;
-        font-size: 1em;
-        padding: 2%;
-        border-radius: 10%;
         margin-bottom: 5%;
+
+        &__span {
+          border-radius: 10%;
+          font-size: 1em;
+          padding: 2%;
+          padding-left: 0;
+          margin-right: 5%;
+        }
+      }
+
+      &__logo {
+        margin-top: 5%;
+        display: flex;
+        justify-content: center;
+        img {
+          filter: grayscale(0%);
+          transition: 0.3s ease-in-out;
+          width: 25%;
+        }
+      }
+
+      &__logo:hover{
+        img{
+          filter: grayscale(100);
+        }
       }
 
       h2 {
         font-weight: bold;
         font-size: 1.5em;
-        margin: 10% 0% 2%;
+        margin: 10% 0% 5%;
       }
+
       p {
         font-size: 1em;
+        margin: 5% 0%;
       }
     }
   }
