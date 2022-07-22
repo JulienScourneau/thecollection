@@ -85,9 +85,9 @@ function createPokemonCard(pokemon) {
     description.innerHTML = pokemon._description
 
     div.appendChild(name)
-    div.appendChild(number)
     div.appendChild(divTypes)
     div.appendChild(description)
+    articule.appendChild(number)
     articule.appendChild(image)
     articule.appendChild(div)
     body.children[1].appendChild(articule)
