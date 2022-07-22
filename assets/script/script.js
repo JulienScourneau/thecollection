@@ -173,6 +173,8 @@ function createAllPokemonCard(pokemonList) {
     divTypes.className = "article__footer__types";
     for (elem of arr) {
       let types = document.createElement("span");
+      types.className = "article__footer__types__span";
+      types.style.backgroundColor = getTypeColor(elem);
       divTypes.appendChild(types);
       types.innerHTML = elem;
     }
@@ -182,7 +184,7 @@ function createAllPokemonCard(pokemonList) {
     link.className = "article__footer__logo";
     link.href = pokemon._link;
     let logo = document.createElement("img");
-    logo.src = "assets/image/pokeball.svg";
+    logo.src = "assets/image/pokeball.png";
 
     div.appendChild(name);
     div.appendChild(divTypes);
@@ -193,6 +195,34 @@ function createAllPokemonCard(pokemonList) {
     articule.appendChild(div);
     articule.appendChild(link);
     body.children[1].appendChild(articule);
+  }
+}
+
+function getTypeColor(type) {
+  console.log(type);
+  switch (type) {
+    case "insecte":
+      return "#adbd21";
+    case "normal":
+      return "#ada594";
+    case "vol":
+      return "#9cadf7";
+    case "eau":
+      return "#399cff";
+    case "dragon":
+      return "#8858f6";
+    case "poison":
+      return "#b55aa5";
+    case "plante":
+      return "#7bce52";
+    case "acier":
+      return "#adadc6";
+    case "spectre":
+      return "#6363b5";
+    case "ténèbres":
+      return "#735a4a";
+    default:
+      break;
   }
 }
 
