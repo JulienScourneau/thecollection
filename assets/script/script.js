@@ -160,9 +160,12 @@ function createAllPokemonCard(pokemonList) {
     let body = document.body;
     let arr = pokemon.types;
     let articule = document.createElement("article");
+    let imageContainer = document.createElement("div")
+    imageContainer.className = "article__header"
     let image = document.createElement("img");
     console.log(pokemon._img);
     image.src = pokemon._img;
+    image.className = "article__header__img"
     let div = document.createElement("div");
     div.className = "article__footer";
     let name = document.createElement("h2");
@@ -186,12 +189,13 @@ function createAllPokemonCard(pokemonList) {
     let logo = document.createElement("img");
     logo.src = "assets/image/pokeball.png";
 
+    imageContainer.appendChild(image)
     div.appendChild(name);
     div.appendChild(divTypes);
     div.appendChild(description);
     link.appendChild(logo);
     articule.appendChild(number);
-    articule.appendChild(image);
+    articule.appendChild(imageContainer);
     articule.appendChild(div);
     articule.appendChild(link);
     body.children[1].appendChild(articule);
