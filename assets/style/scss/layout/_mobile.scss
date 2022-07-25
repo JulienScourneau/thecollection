@@ -47,7 +47,8 @@ main {
 
   align-items: center;
 
-  article {
+  .article {
+    justify-content: space-evenly;
     background-color: white;
     border-radius: 5%;
     display: flex;
@@ -56,11 +57,11 @@ main {
     margin: 5% 5%;
     margin-bottom: 10%;
 
-    .article__header {
+    &__header {
       display: inline-block;
       overflow: hidden;
-      width: 50%;
-      padding-bottom: 50%;
+      width: 45%;
+      padding-bottom: 45%;
       height: 0;
       position: relative;
       &__img {
@@ -83,7 +84,7 @@ main {
       font-size: 0.9em;
     }
 
-    .article__footer {
+    &__footer {
       &__types {
         margin: 5%;
         display: flex;
