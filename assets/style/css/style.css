@@ -168,13 +168,50 @@ main .article__footer__logo:hover img {
   filter: grayscale(100);
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 600px) and (max-width: 850px) {
   main {
     flex-flow: row wrap;
     justify-content: center;
   }
   main .article {
     width: 45%;
+    margin: 1%;
+    height: 550px;
+  }
+}
+@media screen and (min-width: 850px) {
+  .header {
+    flex-direction: row;
+  }
+  .header__span {
+    display: inline-block;
+    overflow: hidden;
+    width: 40%;
+    padding-bottom: 12%;
+    height: 0;
+    position: relative;
+  }
+  .header__span__img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .header h1 {
+    margin-bottom: 2%;
+    font-size: 1.8em;
+  }
+  .header p {
+    font-size: 1em;
+  }
+  main {
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  main .article {
+    width: 300px;
     margin: 1%;
     height: 550px;
   }

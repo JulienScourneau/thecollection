@@ -1,12 +1,52 @@
-@media screen and (min-width: 600px) {
-    main{
-        flex-flow: row wrap;
-        justify-content: center;
+@media screen and (min-width: 600px) and (max-width: 850px) {
+  main {
+    flex-flow: row wrap;
+    justify-content: center;
 
-        .article{
-            width: 45%;
-            margin:  1%;
-            height: 550px;
-        }
+    .article {
+      width: 45%;
+      margin: 1%;
+      height: 550px;
     }
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .header {
+    flex-direction: row;
+    &__span {
+      display: inline-block;
+      overflow: hidden;
+      width: 40%;
+      padding-bottom: 12%;
+      height: 0;
+      position: relative;
+
+      &__img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+    h1{
+        margin-bottom: 2%;
+        font-size: 1.8em;
+    }
+    p{
+        font-size: 1em;
+    }
+  }
+
+  main {
+    flex-flow: row wrap;
+    justify-content: center;
+
+    .article {
+      width: 300px;
+      margin: 1%;
+      height: 550px;
+    }
+  }
 }
