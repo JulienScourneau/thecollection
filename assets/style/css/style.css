@@ -60,30 +60,23 @@ body {
   margin: 5%;
 }
 .header__span {
-  display: inline-block;
-  overflow: hidden;
-  width: 40%;
-  padding-bottom: 40%;
-  height: 0;
-  position: relative;
+  display: flex;
 }
 .header__span__img {
-  width: 100%;
-  height: 100%;
-  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
   border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
-.header div {
+.header__div {
   margin: 5%;
 }
-.header h1 {
+.header__div__title {
   font-size: 2.1em;
   font-weight: bold;
   margin-bottom: 5%;
 }
-.header p {
+.header__div__presentation {
   font-size: 1.1em;
 }
 
@@ -183,28 +176,16 @@ main .article__footer__logo:hover img {
   .header {
     flex-direction: row;
   }
-  .header__span {
-    display: inline-block;
-    overflow: hidden;
-    width: 40%;
-    padding-bottom: 12%;
-    height: 0;
-    position: relative;
+  .header__div {
+    flex: 2;
+    margin: 2%;
   }
-  .header__span__img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    border-radius: 50%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .header h1 {
+  .header__div__title {
     margin-bottom: 2%;
-    font-size: 1.8em;
+    font-size: 1.9em;
   }
-  .header p {
-    font-size: 1em;
+  .header__div__presentation {
+    font-size: 1.1em;
   }
   main {
     flex-flow: row wrap;
