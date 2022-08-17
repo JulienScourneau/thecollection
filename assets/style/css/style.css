@@ -111,31 +111,32 @@ main .article h3 {
   align-self: flex-start;
   order: -1;
   padding: 3%;
-  border-radius: 20%;
-  background-color: lightcyan;
+  border-radius: 12px;
+  background-color: lightgray;
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
   font-size: 0.9em;
 }
 main .article__footer__types {
-  margin: 5%;
+  margin: 10px;
   display: flex;
   font-style: italic;
-  margin-bottom: 5%;
 }
 main .article__footer__types__span {
-  flex: 1 1 0px;
+  text-transform: capitalize;
+  padding: 5px 10px;
+  flex: 1;
   text-align: center;
-  border-radius: 1%;
   font-size: 0.8em;
-  margin: 0% 2%;
-  padding: 2%;
+  margin: 0px 10px;
+  border-radius: 12px;
 }
 main .article__footer h2 {
   font-weight: bold;
   font-size: 1.5em;
   margin: 10% 5% 5%;
+  text-transform: capitalize;
 }
 main .article__footer p {
   font-size: 1em;
