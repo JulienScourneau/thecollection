@@ -1,5 +1,5 @@
 const getPokemonList = () => {
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 1; i++) {
         let pokemon;
         let id = Math.floor(Math.random() * 900) + 1;
         fetchPokemon(id)
@@ -73,28 +73,44 @@ function createPokemonCard(pokemon) {
 
 function getTypeColor(type) {
     switch (type) {
-        case "insecte":
-            return "#adbd21";
         case "normal":
-            return "#ada594";
-        case "vol":
-            return "#9cadf7";
-        case "eau":
-            return "#399cff";
-        case "dragon":
-            return "#8858f6";
+            return "#A8A878";
+        case "fighting":
+            return "#C03028";
+        case "flying":
+            return "#A890F0";
         case "poison":
-            return "#b55aa5";
-        case "plante":
-            return "#7bce52";
-        case "acier":
-            return "#adadc6";
-        case "spectre":
-            return "#6363b5";
-        case "ténèbres":
-            return "#735a4a";
+            return "#A040A0";
+        case "ground":
+            return "#E0C068";
+        case "rock":
+            return "#B8A038";
+        case "bug":
+            return "#A8B820";
+        case "ghost":
+            return "#705898";
+        case "steel":
+            return "#B8B8D0";
+        case "fire":
+            return "#F08030";
+        case "water":
+            return "#6890F0";
+        case "grass":
+            return "#78C850";
+        case "electric":
+            return "#F8D030";
+        case "psychic":
+            return "#F85888";
+        case "ice":
+            return "#98D8D8";
+        case "dragon":
+            return "#7038F8";
+        case "dark":
+            return "#705848";
+        case "fairy":
+            return "#EE99AC";
         default:
-            return "gray";
+            return "#68A090";
     }
 }
 
