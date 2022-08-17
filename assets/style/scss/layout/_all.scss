@@ -1,3 +1,7 @@
-@import "mobile";
-@import "desktop";
+@import "header";
+@import "card";
 
+body {
+    background-color: #f5deb3;
+    font-family: $popins;
+  }

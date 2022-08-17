@@ -1,49 +1,12 @@
-$popins: "Poppins", sans-serif;
-
-body {
-  background-color: #f5deb3;
-  font-family: $popins;
-}
-
-.header {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin: 5%;
-
-  &__span {
-    display: flex;
-    &__img {
-      justify-content: center;
-      align-items: center;
-      width: 200px;
-      border-radius: 50%;
-    }
-  }
-  &__div {
-    margin: 5%;
-    &__title {
-      font-size: 2.1em;
-      font-weight: bold;
-      margin-bottom: 5%;
-    }
-  
-    &__presentation {
-      font-size: 1.1em;
-    }
-  }
-}
-
 main {
   display: flex;
   flex-direction: column;
-
   align-items: center;
 
   .article {
     justify-content: space-evenly;
     background-color: white;
-    border-radius: 5%;
+    border-radius: 12px;
     display: flex;
     flex-direction: column;
     align-items: center;

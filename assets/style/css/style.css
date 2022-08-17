@@ -48,11 +48,6 @@ input {
   border-radius: 0;
 }
 
-body {
-  background-color: #f5deb3;
-  font-family: "Poppins", sans-serif;
-}
-
 .header {
   display: flex;
   align-items: center;
@@ -88,7 +83,7 @@ main {
 main .article {
   justify-content: space-evenly;
   background-color: white;
-  border-radius: 5%;
+  border-radius: 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -161,39 +156,7 @@ main .article__footer__logo:hover img {
   filter: grayscale(100);
 }
 
-@media screen and (min-width: 600px) and (max-width: 850px) {
-  main {
-    flex-flow: row wrap;
-    justify-content: center;
-  }
-  main .article {
-    width: 45%;
-    margin: 1%;
-    height: 550px;
-  }
-}
-@media screen and (min-width: 850px) {
-  .header {
-    flex-direction: row;
-  }
-  .header__div {
-    flex: 2;
-    margin: 2%;
-  }
-  .header__div__title {
-    margin-bottom: 2%;
-    font-size: 1.9em;
-  }
-  .header__div__presentation {
-    font-size: 1.1em;
-  }
-  main {
-    flex-flow: row wrap;
-    justify-content: center;
-  }
-  main .article {
-    width: 300px;
-    margin: 1%;
-    height: 550px;
-  }
+body {
+  background-color: #f5deb3;
+  font-family: "Poppins", sans-serif;
 }
