@@ -52,14 +52,20 @@ input {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 5%;
+  margin-top: 50px;
 }
-.header__span {
-  display: flex;
+@media screen and (min-width: 760px) {
+  .header {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 760px) {
+  .header__span {
+    align-self: flex-start;
+    margin: 20px;
+  }
 }
 .header__span__img {
-  justify-content: center;
-  align-items: center;
   width: 200px;
   border-radius: 50%;
 }
