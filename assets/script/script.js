@@ -1,5 +1,5 @@
 const getPokemonList = () => {
-    for (let i = 0; i < 1; i++) {
+    for (let i = 0; i < 10; i++) {
         let pokemon;
         let id = Math.floor(Math.random() * 900) + 1;
         fetchPokemon(id)
